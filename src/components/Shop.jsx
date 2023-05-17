@@ -92,13 +92,13 @@ function Shop() {
     }, []);
     
     return <main className="container content">
-            <Cart quantity={order.length} handleBasketShow={handleBasketShow}/>
-            {loading ? (
+        <Cart quantity={order.length} handleBasketShow={handleBasketShow}/>
+        {loading ? (
                 <Preloader /> 
-            ) : (
+        ) : (
                 <GoodsList goods={goods} addToBasket={addToBasket} />
-            )}
-            {isBasketShow && (
+        )}
+        {isBasketShow && (
                 <BasketList
                     order={order} 
                     handleBasketShow={handleBasketShow}
@@ -106,9 +106,9 @@ function Shop() {
                     incQuantity={incQuantity}
                     decQuantity={decQuantity}
                 />
-            )}
-            {alertName && <Alert name={alertName} closeAlert={closeAlert}/>}
-        </main>
+        )}
+        {alertName && <Alert name={alertName} closeAlert={closeAlert}/>}
+    </main>
 }
   
 export { Shop };
