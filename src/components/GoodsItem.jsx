@@ -11,7 +11,7 @@ function GoodsItem(props) {
             <p>{description}</p>
         </div>
         <div className="card-action">
-            <button className="btn"
+            <button className="btn lime darken-1"
                 onClick={() =>
                 addToBasket({
                     id,
